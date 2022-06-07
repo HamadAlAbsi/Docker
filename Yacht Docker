@@ -1,0 +1,13 @@
+#Install Yacht on Docker
+#Option 1: Install as a Docker Volume
+#Create the Yacht volume.
+
+$docker volume create yacht
+
+#Install Yacht, and assign a listening port, it is recommended to use port 8000.
+
+$docker run -d -p 8000:8000 -v /var/run/docker.sock:/var/run/docker.sock -v yacht:/config --name yacht selfhostedpro/yacht
+
+
+
+
