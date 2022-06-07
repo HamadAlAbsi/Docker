@@ -1,0 +1,3 @@
+docker run -p 8080:8080 -e "EXTENSIONS=auth-totp"  --restart unless-stopped -v </path/to/config>:/config oznu/guacamole 
+
+#totp for two factor authentication 
