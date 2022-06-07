@@ -6,7 +6,7 @@ services:
     ports:
       - 10051:10051
     volumes:
-      - /home/ubuntu/docker/Zabbix/app:/app
+      - <path>/Zabbix/app:/app
     networks:
       - network-zabbix
     environment:
@@ -66,7 +66,7 @@ services:
       - POSTGRES_USER=admin
       - POSTGRES_PASSWORD=YourPassword
     volumes:
-      - /home/ubuntu/docker/Zabbix/db:/var/lib/postgresql/data/
+      - <path>/Zabbix/db:/var/lib/postgresql/data/
 
 volumes:
    datastore:
